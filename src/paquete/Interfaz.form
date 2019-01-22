@@ -51,9 +51,9 @@
                           </Group>
                           <Component id="cargado_texto" max="32767" attributes="0"/>
                           <Component id="insercion_texto" alignment="0" max="32767" attributes="0"/>
-                          <Component id="añadir_boton" alignment="0" max="32767" attributes="0"/>
                           <Component id="jButton1" alignment="1" max="32767" attributes="0"/>
                           <Component id="jButton2" alignment="1" max="32767" attributes="0"/>
+                          <Component id="añadir_boton" alignment="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -93,11 +93,12 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="cargado_texto" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" pref="48" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton2" min="-2" pref="48" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
                       <Component id="añadir_boton" min="-2" pref="50" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                      <Component id="jButton2" min="-2" pref="48" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" pref="48" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                   </Group>
                   <Component id="jScrollPane3" max="32767" attributes="0"/>
               </Group>
