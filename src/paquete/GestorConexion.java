@@ -2,6 +2,8 @@ package paquete;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -11,6 +13,7 @@ import java.sql.Statement;
 public class GestorConexion {
 
     Connection conn1;
+    String cadena_resultado = "";
 
     public GestorConexion() {
 
@@ -32,44 +35,29 @@ public class GestorConexion {
         }
     }
 
-    public void annadir() {
+    public void annadirColumna(String caratula) {
         try {
+            conn1.setAutoCommit(false);
 
             Statement sta = conn1.createStatement();
-            sta.executeUpdate("ALTER TABLE album ADD...tipo");
+
+            sta.executeUpdate("ALTER TABLE album ADD " + caratula + " VARCHAR(30)");
+
             sta.close();
-            System.out.println("Añadido correctamente");
 
-        } catch (Exception ex) {
-            System.out.println("ERROR:al añadir");
-            ex.printStackTrace();
-        }
-    }
+            conn1.commit();
 
-    public void insertar() {
-        try {
-
-            Statement sta = conn1.createStatement();
-            sta.executeUpdate("INSERT INTO album VALUES (2,'Greatest Hits','Queen')");
-            sta.close();
-            System.out.println("Insertado correctamente");
-
-        } catch (SQLException ex) {
-            System.out.println("ERROR:al insertar");
-            ex.printStackTrace();
-        }
-    }
-
-    public void eliminar() {
-        try {
-            Statement sta = conn1.createStatement();
-            sta.executeUpdate("DROP TABLE album");
-            sta.close();
-            System.out.println("Eliminado correctamente");
-            
-        } catch (Exception ex) {
-            System.out.println("ERROR:al eliminar");
-            ex.printStackTrace();
+            System.out.println("has añadido una columna");
+        } catch (Exception e) {
+            System.out.println("Error");
+            try {
+                if (conn1 != null) {
+                    conn1.rollback();
+                }
+            } catch (Exception se2) {
+                se2.printStackTrace();
+            }
+            e.printStackTrace();
         }
     }
 
@@ -84,4 +72,32 @@ public class GestorConexion {
         }
     }
 
+    public String consultaStatement() {
+        String fallo = "error";
+
+        try {
+            conn1.setAutoCommit(false);
+
+            Statement sta = conn1.createStatement();
+            String query = "SELECT * FROM album ";
+            ResultSet rs = sta.executeQuery(query);
+            ResultSetMetaData metaDatos = rs.getMetaData();
+
+            int numColumnas = metaDatos.getColumnCount();
+
+            return cadena_resultado;
+
+        } catch (Exception e) {
+            System.out.println("Error");
+            try {
+                if (conn1 != null) {
+                    conn1.rollback();
+                }
+            } catch (Exception se2) {
+                se2.printStackTrace();
+            }
+            e.printStackTrace();
+            return fallo;
+        }
+    }
 }
