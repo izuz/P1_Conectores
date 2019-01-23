@@ -101,13 +101,13 @@ public class GestorConexion {
         }
     }
 
-    public void insertarAlbumNuevo(String idAlbum, String titulo_Album, String publicacion, String artistaa) {
+    public void insertarAlbumNuevo(String id_Album, String titulo_Album, String publicacion, String artistaa) {
         try {
             conn1.setAutoCommit(false);
 
             Statement sta = conn1.createStatement();
 
-            sta.executeUpdate("INSERT INTO album VALUES('" + idAlbum + "', '" + titulo_Album + "', '" + publicacion + "', '" + artistaa + "')");
+            sta.executeUpdate("INSERT INTO album VALUES('" + id_Album + "', '" + titulo_Album + "', '" + publicacion + "', '" + artistaa + "')");
 
             System.out.println("insertado album correctamente");
 
