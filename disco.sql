@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-01-2019 a las 20:33:26
+-- Tiempo de generación: 23-01-2019 a las 20:18:47
 -- Versión del servidor: 10.1.29-MariaDB
 -- Versión de PHP: 7.2.0
 
@@ -32,7 +32,7 @@ CREATE TABLE `album` (
   `id_album` int(11) NOT NULL,
   `titulo` varchar(30) COLLATE utf8_bin NOT NULL,
   `fecha_publicacion` year(4) NOT NULL,
-  `artista` varchar(30) COLLATE utf8_bin DEFAULT NULL
+  `artista` varchar(30) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
@@ -72,7 +72,9 @@ INSERT INTO `cancion` (`id_cancion`, `titulo`, `duracion`, `letra`, `id_album`) 
 (14, 'Love of my life', '3:39', 'Love of my life, you\'ve hurt me\r\nYou\'ve broken my heart and now you leave me\r\nLove of my life, can\'t you see?\r\nBring it back, bring it back\r\nDon\'t take it away from me, because you don\'t know\r\nWhat it means to me\r\nLove of my life, don\'t leave me\r\nYou\'ve stolen my love, you now desert me\r\nLove of my life, can\'t you see?\r\nBring it back, bring it back (back)\r\nDon\'t take it away from me\r\nBecause you don\'t know\r\nWhat it means to me\r\nObrigado\r\nYou will remember\r\nWhen this is blown over\r\nEverything\'s all by the way\r\nWhen I grow older\r\nI will be there at your side to remind you\r\nHow I still love you (I still love you)\r\nI still love you\r\nOh, hurry back, hurry back\r\nDon\'t take it away from me\r\nBecause you don\'t know what it means to me\r\nLove of my life\r\nLove of my life\r\nOoh, eh (alright)', 1),
 (15, 'Good Company', '3:23', 'Take good core of what you\'ve got\r\nMy father said to me\r\nAs he puffed his pipe and Baby B.\r\nHe dandled on his knee\r\nDon\'t fool with fools who\'ll turn away\r\nKeep all Good Company\r\nOo Hoo Oo Hoo\r\nTake care of those you call your own\r\nAnd keep Good Company\r\nSoon I grew and happy too\r\nMy very good friends and me\r\nWe\'d play all day and Sally J.\r\nThe girl from number four\r\nAnd very soon I begged her won\'t you\r\nKeep me Company\r\nNow marriage is an insinuation sure\r\nMy wife and I our needs and nothing more All my friends by a year\r\nBy and by disappear\r\nBut we\'re safe enough behind our door.\r\nI flourished in my humble trade\r\nMy reputation grew\r\nThe work devoured my waking hours\r\nBut when my time was through\r\nReward of all my efforts my own\r\nLimited Company\r\nI hardly noticed Sall as we\r\nPated Company\r\nAll through the years in the end it appears\r\nThere was never really anyone but me\r\nNow I\'m old I puff my pipe\r\nBut no-one\'s there to see\r\nI ponder on the lesson of\r\nMy life\'s insanity\r\nTake care of those you call your own\r\nAnd Keep Good Company', 1),
 (16, 'Bohemian Rhapsody', '5:55', 'Is this the real life?\r\nIs this just fantasy?\r\nCaught in a landslide\r\nNo escape from reality\r\nOpen your eyes\r\nLook up to the skies and see\r\nI\'m just a poor boy, I need no sympathy\r\nBecause I\'m easy come, easy go\r\nA little high, little low\r\nAnyway the wind blows, doesn\'t really matter to me, to me\r\nMama, just killed a man\r\nPut a gun against his head\r\nPulled my trigger, now he\'s dead\r\nMama, life had just begun\r\nBut now I\'ve gone and thrown it all away\r\nMama, oh oh \r\nDidn\'t mean to make you cry\r\nIf I\'m not back again this time tomorrow\r\nCarry on, carry on, as if nothing really matters\r\nToo late, my time has come\r\nSends shivers down my spine\r\nBody\'s aching all the time\r\nGoodbye everybody I\'ve got to go\r\nGotta leave you all behind and face the truth\r\nMama, oh oh (anyway the wind blows)\r\nI don\'t want to die\r\nSometimes wish I\'d never been born at all\r\nI see a little silhouetto of a man\r\nScaramouch, Scaramouch will you do the Fandango\r\nThunderbolt and lightning very very frightening me\r\nGallileo, Gallileo, Gallileo, Gallileo, Gallileo, figaro, magnifico\r\nI\'m just a poor boy and nobody loves me\r\nHe\'s just a poor boy from a poor family\r\nSpare him his life from this monstrosity\r\nEasy come easy go will you let me go\r\nBismillah, no we will not let you go, let him go\r\nBismillah, we will not let you go, let him go\r\nBismillah, we will not let you go, let me go\r\n(Will not let you go) let me go (never, never let you go) let me go (never let me go)\r\nOh oh no, no, no, no, no, no, no\r\nOh mama mia, mama mia, mama mia let me go\r\nBeelzebub has a devil put aside for me for me for me\r\nSo you think you can stop me and spit in my eye\r\nSo you think you can love me and leave me to die\r\nOh baby can\'t do this to me baby\r\nJust gotta get out just gotta get right outta here\r\nOh oh oh yeah, oh oh yeah\r\nNothing really matters\r\nAnyone can see\r\nNothing really matters \r\nNothing really matters to me\r\nAnyway the wind blows', 1),
-(17, 'God Save the Queen', '1:15', 'Thank you beautiful people!\r\nYou\'ve been a tremendous - you\'ve been a really special audience.\r\nThank you very much.\r\nGoodnight, sweet dreams, we love you.', 1);
+(17, 'God Save the Queen', '1:15', 'Thank you beautiful people!\r\nYou\'ve been a tremendous - you\'ve been a really special audience.\r\nThank you very much.\r\nGoodnight, sweet dreams, we love you.', 1),
+(18, 'man', '2:54', 'iygfbgibvibviwuvb', 1),
+(20, 'ufgj', '3:25', 'ufhogchgc', 2);
 
 --
 -- Índices para tablas volcadas
@@ -95,16 +97,10 @@ ALTER TABLE `cancion`
 --
 
 --
--- AUTO_INCREMENT de la tabla `album`
---
-ALTER TABLE `album`
-  MODIFY `id_album` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
 -- AUTO_INCREMENT de la tabla `cancion`
 --
 ALTER TABLE `cancion`
-  MODIFY `id_cancion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id_cancion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
