@@ -20,7 +20,7 @@ public class Interfaz extends javax.swing.JFrame {
         this.getContentPane().setBackground(Color.green); // damos color al fondo del jFrame
         this.setLocationRelativeTo(null); // con esto hacemos que la pnatalla se abra en el centro de la pantalla
         this.setSize(730, 500);
-
+        
         try {
             gc.conn1.setAutoCommit(false);
 
@@ -52,7 +52,6 @@ public class Interfaz extends javax.swing.JFrame {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 
     @SuppressWarnings("unchecked")
