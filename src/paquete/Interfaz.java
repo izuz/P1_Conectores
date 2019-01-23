@@ -402,6 +402,7 @@ public class Interfaz extends javax.swing.JFrame {
 
     private void caratula_botonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_caratula_botonActionPerformed
         gc.annadirColumna(caratula_texto.getText());
+        album_consultaActionPerformed(evt);
         error.setText(gc.cadena_resultado);
     }//GEN-LAST:event_caratula_botonActionPerformed
 
