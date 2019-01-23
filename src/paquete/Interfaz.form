@@ -192,7 +192,7 @@
     <Component class="javax.swing.JTextField" name="publicacion_texto">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="a&#xf1;o/mes/dia"/>
+        <Property name="text" type="java.lang.String" value="A&#xf1;o publicacion"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="artista_texto">

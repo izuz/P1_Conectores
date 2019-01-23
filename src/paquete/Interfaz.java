@@ -127,7 +127,7 @@ public class Interfaz extends javax.swing.JFrame {
         titulo_texto.setText("Título");
 
         publicacion_texto.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        publicacion_texto.setText("año/mes/dia");
+        publicacion_texto.setText("Año publicacion");
 
         artista_texto.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         artista_texto.setText("Artista");
