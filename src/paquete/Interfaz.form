@@ -33,25 +33,30 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="publicacion_texto" min="-2" pref="101" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="id_3" min="-2" pref="101" max="-2" attributes="0"/>
+                      <Component id="artista_texto" min="-2" pref="101" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="insertar_album" min="-2" pref="138" max="-2" attributes="0"/>
                   </Group>
                   <Group type="103" groupAlignment="1" max="-2" attributes="0">
                       <Component id="jScrollPane1" max="32767" attributes="0"/>
-                      <Group type="102" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
                           <Component id="texto_id" pref="45" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="consulta_id" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="canciones_boton" min="-2" max="-2" attributes="0"/>
+                          <Component id="canciones_consulta" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="album_cancion" min="-2" max="-2" attributes="0"/>
+                          <Component id="album_consulta" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="caratula_boton" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="caratula_texto" max="32767" attributes="0"/>
+                              <Component id="caratula_boton" max="32767" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="id_song" min="-2" pref="89" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="tituloCancion_texto" min="-2" pref="101" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="duracion_texto" min="-2" pref="101" max="-2" attributes="0"/>
@@ -60,11 +65,11 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="id_album" min="-2" pref="101" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="insertar_cancion" min="-2" pref="138" max="-2" attributes="0"/>
+                      <Component id="insertar_cancion" min="-2" pref="132" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="error" alignment="0" min="-2" pref="655" max="-2" attributes="0"/>
+                  <Component id="error" min="-2" pref="655" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="23" max="32767" attributes="0"/>
+              <EmptySpace pref="16" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -76,15 +81,17 @@
                   <Component id="consulta_id" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="texto_id" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                   <Component id="caratula_boton" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="canciones_boton" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="album_cancion" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="canciones_consulta" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="album_consulta" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="caratula_texto" min="-2" pref="30" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="id_texto" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                   <Component id="titulo_texto" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                   <Component id="publicacion_texto" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                  <Component id="id_3" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                  <Component id="artista_texto" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                   <Component id="insertar_album" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
@@ -94,8 +101,9 @@
                   <Component id="letra_texto" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                   <Component id="id_album" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                   <Component id="insertar_cancion" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                  <Component id="id_song" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Component id="error" pref="69" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="213" max="-2" attributes="0"/>
@@ -123,6 +131,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Consultar id_cancion"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="consulta_idActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="texto_id">
       <Properties>
@@ -140,22 +151,31 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Insertar Caratula"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="caratula_botonActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="canciones_boton">
+    <Component class="javax.swing.JButton" name="canciones_consulta">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="12" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Consultar canciones"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="canciones_consultaActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="album_cancion">
+    <Component class="javax.swing.JButton" name="album_consulta">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="12" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Consultar album"/>
+        <Property name="text" type="java.lang.String" value="Consultar albumes"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="album_consultaActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="id_texto">
       <Properties>
@@ -172,10 +192,10 @@
     <Component class="javax.swing.JTextField" name="publicacion_texto">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="A&#xf1;o publicacion"/>
+        <Property name="text" type="java.lang.String" value="a&#xf1;o/mes/dia"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="id_3">
+    <Component class="javax.swing.JTextField" name="artista_texto">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="Artista"/>
@@ -188,6 +208,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Insertar album"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="insertar_albumActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="tituloCancion_texto">
       <Properties>
@@ -220,8 +243,23 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Insertar cancion"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="insertar_cancionActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="error">
+    </Component>
+    <Component class="javax.swing.JTextField" name="caratula_texto">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="Imagen caratula_nombre"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="id_song">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="id_cancion"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>

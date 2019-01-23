@@ -100,4 +100,63 @@ public class GestorConexion {
             return fallo;
         }
     }
+
+    public void insertarAlbumNuevo(String idAlbum, String titulo_Album, String publicacion, String artistaa) {
+        try {
+            conn1.setAutoCommit(false);
+
+            Statement sta = conn1.createStatement();
+
+            sta.executeUpdate("INSERT INTO album VALUES('" + idAlbum + "', '" + titulo_Album + "', '" + publicacion + "', '" + artistaa + "')");
+
+            System.out.println("insertado album correctamente");
+
+            sta.close();
+
+            conn1.commit();
+        } catch (Exception e) {
+            System.out.println("Error");
+
+            try {
+                if (conn1 != null) {
+                    conn1.rollback();
+                }
+            } catch (Exception se2) {
+                se2.printStackTrace();
+                cadena_resultado = se2.toString();
+            }
+            e.printStackTrace();
+            cadena_resultado = e.toString();
+        }
+    }
+
+    public void cancionNueva(String id, String nombre, String duracion, String letra, String id_album) {
+        try {
+            conn1.setAutoCommit(false);
+
+            Statement sta = conn1.createStatement();
+
+            sta.executeUpdate("INSERT INTO cancion VALUES('" + id + "', '" + nombre + "', '" + duracion + "', '" + letra + "', '" + id_album + "')");
+
+            System.out.println("insertado cancion correctamente");
+
+            sta.close();
+
+            conn1.commit();
+        } catch (Exception e) {
+            System.out.println("Error");
+
+            try {
+                if (conn1 != null) {
+                    conn1.rollback();
+                }
+            } catch (Exception se2) {
+                se2.printStackTrace();
+                cadena_resultado = se2.toString();
+            }
+
+            e.printStackTrace();
+            cadena_resultado = e.toString();
+        }
+    }
 }
