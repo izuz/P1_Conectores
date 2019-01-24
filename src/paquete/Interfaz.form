@@ -211,6 +211,9 @@
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="1"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="texto_idMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="caratula_boton">
       <Properties>
@@ -250,24 +253,36 @@
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="id_album"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="id_textoMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="titulo_texto">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="T&#xed;tulo"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="titulo_textoMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="publicacion_texto">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="A&#xf1;o publicacion"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="publicacion_textoMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="artista_texto">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="Artista"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="artista_textoMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="insertar_album">
       <Properties>
@@ -285,24 +300,36 @@
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="T&#xed;tulo"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tituloCancion_textoMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="duracion_texto">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="Duraci&#xf3;n"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="duracion_textoMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="letra_texto">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="Letra"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="letra_textoMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="id_album">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="id_album"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="id_albumMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="insertar_cancion">
       <Properties>
@@ -322,12 +349,18 @@
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="Imagen caratula_nombre"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="caratula_textoMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="id_song">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="id_cancion"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="id_songMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="consulta_idAlbum">
       <Properties>
@@ -348,6 +381,9 @@
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="1"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="texto_idAlbumMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>

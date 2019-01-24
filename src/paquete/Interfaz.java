@@ -105,6 +105,11 @@ public class Interfaz extends javax.swing.JFrame {
         texto_id.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         texto_id.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         texto_id.setText("1");
+        texto_id.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                texto_idMouseClicked(evt);
+            }
+        });
 
         caratula_boton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         caratula_boton.setText("Insertar Caratula");
@@ -132,15 +137,35 @@ public class Interfaz extends javax.swing.JFrame {
 
         id_texto.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         id_texto.setText("id_album");
+        id_texto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                id_textoMouseClicked(evt);
+            }
+        });
 
         titulo_texto.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         titulo_texto.setText("Título");
+        titulo_texto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                titulo_textoMouseClicked(evt);
+            }
+        });
 
         publicacion_texto.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         publicacion_texto.setText("Año publicacion");
+        publicacion_texto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                publicacion_textoMouseClicked(evt);
+            }
+        });
 
         artista_texto.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         artista_texto.setText("Artista");
+        artista_texto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                artista_textoMouseClicked(evt);
+            }
+        });
 
         insertar_album.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         insertar_album.setText("Insertar album");
@@ -152,15 +177,35 @@ public class Interfaz extends javax.swing.JFrame {
 
         tituloCancion_texto.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         tituloCancion_texto.setText("Título");
+        tituloCancion_texto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tituloCancion_textoMouseClicked(evt);
+            }
+        });
 
         duracion_texto.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         duracion_texto.setText("Duración");
+        duracion_texto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                duracion_textoMouseClicked(evt);
+            }
+        });
 
         letra_texto.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         letra_texto.setText("Letra");
+        letra_texto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                letra_textoMouseClicked(evt);
+            }
+        });
 
         id_album.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         id_album.setText("id_album");
+        id_album.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                id_albumMouseClicked(evt);
+            }
+        });
 
         insertar_cancion.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         insertar_cancion.setText("Insertar cancion");
@@ -172,9 +217,19 @@ public class Interfaz extends javax.swing.JFrame {
 
         caratula_texto.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         caratula_texto.setText("Imagen caratula_nombre");
+        caratula_texto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                caratula_textoMouseClicked(evt);
+            }
+        });
 
         id_song.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         id_song.setText("id_cancion");
+        id_song.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                id_songMouseClicked(evt);
+            }
+        });
 
         consulta_idAlbum.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         consulta_idAlbum.setText("Consultar id_album");
@@ -187,6 +242,11 @@ public class Interfaz extends javax.swing.JFrame {
         texto_idAlbum.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         texto_idAlbum.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         texto_idAlbum.setText("1");
+        texto_idAlbum.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                texto_idAlbumMouseClicked(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -544,6 +604,54 @@ public class Interfaz extends javax.swing.JFrame {
             error.setText(errores);
         }
     }//GEN-LAST:event_consulta_idAlbumActionPerformed
+
+    private void texto_idMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_texto_idMouseClicked
+        texto_id.setText("");
+    }//GEN-LAST:event_texto_idMouseClicked
+
+    private void texto_idAlbumMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_texto_idAlbumMouseClicked
+        texto_idAlbum.setText("");
+    }//GEN-LAST:event_texto_idAlbumMouseClicked
+
+    private void caratula_textoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_caratula_textoMouseClicked
+        caratula_texto.setText("");
+    }//GEN-LAST:event_caratula_textoMouseClicked
+
+    private void id_textoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_id_textoMouseClicked
+        id_texto.setText("");
+    }//GEN-LAST:event_id_textoMouseClicked
+
+    private void titulo_textoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_titulo_textoMouseClicked
+       titulo_texto.setText("");
+    }//GEN-LAST:event_titulo_textoMouseClicked
+
+    private void publicacion_textoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_publicacion_textoMouseClicked
+        publicacion_texto.setText("");
+    }//GEN-LAST:event_publicacion_textoMouseClicked
+
+    private void artista_textoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_artista_textoMouseClicked
+        artista_texto.setText("");
+    }//GEN-LAST:event_artista_textoMouseClicked
+
+    private void id_songMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_id_songMouseClicked
+        id_song.setText("");
+    }//GEN-LAST:event_id_songMouseClicked
+
+    private void tituloCancion_textoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tituloCancion_textoMouseClicked
+       tituloCancion_texto.setText("");
+    }//GEN-LAST:event_tituloCancion_textoMouseClicked
+
+    private void duracion_textoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_duracion_textoMouseClicked
+        duracion_texto.setText("");
+    }//GEN-LAST:event_duracion_textoMouseClicked
+
+    private void letra_textoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_letra_textoMouseClicked
+        letra_texto.setText("");
+    }//GEN-LAST:event_letra_textoMouseClicked
+
+    private void id_albumMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_id_albumMouseClicked
+        id_album.setText("");
+    }//GEN-LAST:event_id_albumMouseClicked
 
     /**
      * @param args the command line arguments
